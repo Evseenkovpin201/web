@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:1.24.0-alpine
+    container_name: car_catalog_nginx
+    ports:
+      - '80:80'
+    volumes:
+      - ./public:/var/www/public
+      - ./storage/app/public:/var/www/storage/app/public
+      - ./docker/nginx/conf.d:/etc/nginx/conf.d
+    networks:
+      - car_catalog
+
+  php:
+    build:
+      context: .
+      dockerfile: ./docker/php/Dockerfile
+    container_name: car_catalog_php
+    volumes:
+      - ./:/var/www
+      - ./docker/php/conf.d/php.ini:/usr/local/etc/php/php.ini
+    depends_on:
+      - nginx
+      - postgresql
+    networks:
+      - car_catalog
+
+  postgresql:
+    image: postgres:15.3-alpine
+    container_name: car_catalog_postgresql
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: car_catalog
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+    networks:
+      - car_catalog
+
+  adminer:
+    image: adminer:4.8.1
+    container_name: car_catalog_adminer
+    ports:
+      - '8080:8080'
+    depends_on:
+      - postgresql
+    environment:
+      ADMINER_DEFAULT_SERVER: postgresql
+    networks:
+      - car_catalog
+
+networks:
+  car_catalog:
+    name: car_catalog
+
+volumes:
+  postgresql_data:
+    name: car_catalog_postgresql_data
+  redis_data:
+    name: car_catalog_redis_data

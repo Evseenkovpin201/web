@@ -1,0 +1,100 @@
+/* Стили для страницы */
+body {
+    background-image: url("https://images.unsplash.com/photo-1558094624-7a5f03aa5440?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1000&ixlib=rb-1.2.1&q=80&w=2000");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 30px;
+    position: relative;
+}
+
+/* Стили для таблицы */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Стили для формы */
+form {
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 12px;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+select {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 12px;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* Стили для функции связи с нами */
+.contact-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    background-color: #3e8e41;
+
+}
