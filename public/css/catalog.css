@@ -75,3 +75,39 @@
 .footer-text {
     margin-left: 50rem;
 }
+@media print {
+    .header-btn {
+        display: none;
+    }
+
+    .footer {
+      display: none;
+    }
+  }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .car-card {
+        flex: 1 0 calc(33.33% - 3rem);
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .car-card {
+        flex: 1 0 calc(100% - 3rem);
+    }
+    .car-card-image {
+        height: 150px;
+    }
+    .car-card-info {
+        padding-top: 1rem;
+    }
+    .car-card-title {
+        font-size: 1.2rem;
+    }
+    .car-card-year {
+        font-size: 1rem;
+    }
+    .car-card-description {
+        font-size: 0.9rem; / Уменьшим размер описания на маленьких экранах */
+    }
+}
