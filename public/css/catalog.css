@@ -73,14 +73,11 @@
     line-height: 1.5;
 }
 .footer-text {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
+   margin-left: 900px;
 }
 @media only screen and (max-width: 600px) {
     .footer-text {
-        width: 80%; /* Любое значение, которое вам подходит */
+        margin-left: 50px;
     }
 }
 @media print {
