@@ -38,6 +38,7 @@
     <h1 class="header-title">Автомобили</h1>
     <button class="header-btn">Совет дня</button>
     <a class="header-btn" href="{{ route('filter') }}">Фильтр</a>
+    <a class="header-btn" href="{{ route('catalog') }}">Каталог</a>
 </header>
 <main class="main">
     <div class="container">

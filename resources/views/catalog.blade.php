@@ -14,7 +14,6 @@
     <button class="header-btn">Совет дня</button>
     <button class="mainButton">Главная</button>
     <a class="header-btn" href="{{ route('filter') }}">Фильтр</a>
-    <a class="header-btn" href="{{ route('catalog') }}">Каталог</a>
 </header>
 <main class="main">
     <div class="container">
