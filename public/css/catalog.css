@@ -68,9 +68,9 @@ body {
 
 .car-card-image img {
     width: 100%;
-    height: 0;
-    padding-bottom: 75%; /* Это создаст аспектное соотношение 4:3 (75% = 3/4) */
-    object-fit: cover;
+    height: auto;
+    padding-bottom: 75%;
+
 }
 .car-card-info {
     padding: 15px;
