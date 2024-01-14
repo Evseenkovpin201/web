@@ -1,14 +1,14 @@
 var carCards = document.querySelectorAll('.car-card');
 
 // Добавление обработчика клика на каждую карточку автомобиля
-carCards.forEach(function(carCard) {
- carCard.addEventListener('click', function() {
+//carCards.forEach(function(carCard) {
+ //carCard.addEventListener('click', function() {
   // Отображение информациио выбранном автомобиле
-  var model = carCard.querySelector('.car-card-title').textContent;
-  var year = carCard.querySelector('.car-card-year').textContent;
-  alert('Выбран автомобиль: ' + model + ', год: ' + year);
- })
-})
+  //var model = carCard.querySelector('.car-card-title').textContent;
+  //var year = carCard.querySelector('.car-card-year').textContent;
+  //alert('Выбран автомобиль: ' + model + ', год: ' + year);
+// })
+//})
 // Список советов
 var tips = [
     'Не забывайте проверять уровень масла и тормозных жидкостей в автомобиле регулярно!',
@@ -26,6 +26,10 @@ var tips = [
     var randomIndex = Math.floor(Math.random() * tips.length);
     return tips[randomIndex];
    }
-
+// Добавление обработчика клика на кнопку
+var headerBtn = document.querySelector('.header-btn');
+headerBtn.addEventListener('click', function() {
+    alert(getRandomTip());
+});
 
 
