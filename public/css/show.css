@@ -21,7 +21,6 @@ body {
 }
 
 .header-btn {
-    color: #fff;
     text-decoration: none;
     padding: 5px 10px;
     margin: 0 5px;
@@ -66,6 +65,19 @@ body {
 .car-card-year,
 .car-card-description {
     margin: 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+.footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 @media print {
     .header-btn {
