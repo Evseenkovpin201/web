@@ -1,3 +1,4 @@
+*{text-decoration: none;
 .header-title, .cars-section-title {
     font-size: 2rem;
     margin: 2rem 0;
@@ -143,5 +144,5 @@ body {
         font-size: 0.9rem; / Уменьшим размер описания на маленьких экранах */
     }
 }
-
+}
 
