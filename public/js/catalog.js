@@ -33,7 +33,6 @@ var tips = [
     alert(getRandomTip());
    });
 var mainButton = document.getElementById('mainButton');
-
 mainButton.addEventListener('click', function() {
     window.location.href = 'https://24carslist.ru/';
 });
