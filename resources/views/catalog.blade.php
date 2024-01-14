@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- /Yandex.Metrika counter -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Автомобили</title>
@@ -12,7 +11,6 @@
 <header class="header">
     <h1 class="header-title">Автомобили</h1>
     <button class="header-btn">Совет дня</button>
-    <button class="mainButton">Главная</button>
     <a class="header-btn" href="{{ route('filter') }}">Фильтр</a>
 </header>
 <main class="main">

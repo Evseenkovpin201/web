@@ -76,7 +76,11 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #3e8e41;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;;
 }
 
 /* Стили для функции связи с нами */
