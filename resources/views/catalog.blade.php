@@ -48,7 +48,7 @@
                         </div>
                     </a>
                 @empty
-                    Товаров не найдено
+                    Автомобилей не найдено
                 @endforelse
             </div>
         </section>
