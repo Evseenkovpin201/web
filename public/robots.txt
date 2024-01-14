@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://24carslist.ru/sitemap.xml
