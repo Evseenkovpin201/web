@@ -91,25 +91,24 @@ body {
     }
 }
 
+@media print {
+    .header-btn {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+}
 
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
     .car-card {
-        flex: 1 0 calc(100% - 3rem);
-    }
-    .car-card-image {
-        height: 150px;
-    }
-    .car-card-info {
-        padding-top: 1rem;
-    }
-    .car-card-title {
-        font-size: 1.2rem;
-    }
-    .car-card-year {
-        font-size: 1rem;
-    }
-    .car-card-description {
-        font-size: 0.9rem; / Уменьшим размер описания на маленьких экранах */
+        width: 100%;
     }
 }
