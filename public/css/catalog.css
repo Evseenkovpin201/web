@@ -67,10 +67,9 @@ body {
 }
 
 .car-card-image img {
-    width: 100%;
-    height: auto;
-    padding-bottom: 75%;
-    object-fit: cover;
+    width: 200px; /* Замените на нужную вам ширину */
+    height: 150px; /* Замените на нужную вам высоту */
+    object-fit: cover; /* Заполнить область, сохраняя соотношение сторон и обрезая изображение при необходимости */
 }
 .car-card-info {
     padding: 15px;
