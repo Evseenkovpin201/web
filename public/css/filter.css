@@ -88,8 +88,8 @@ input[type="submit"]:hover {
     position: absolute;
     top: 30px;
     right: 30px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #fff;
+    color: #333;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -99,6 +99,6 @@ input[type="submit"]:hover {
 }
 
 .contact-button:hover {
-    background-color: #3e8e41;
+    background-color: #fff;
 
 }
