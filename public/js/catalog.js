@@ -26,10 +26,10 @@ var tips = [
     var randomIndex = Math.floor(Math.random() * tips.length);
     return tips[randomIndex];
    }
-// Добавление обработчика клика на кнопку
-//var headerBtn = document.querySelector('.header-btn');
-//headerBtn.addEventListener('click', function() {
-//    alert(getRandomTip());
-//});
+
+var headerBtn = document.querySelector('.header-btn');
+headerBtn.addEventListener('click', function() {
+   alert(getRandomTip());
+});
 
 
