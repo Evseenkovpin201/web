@@ -128,23 +128,30 @@ body {
 
 
 @media only screen and (max-width: 767px) {
+    text-decoration: none;
     .car-card {
+        text-decoration: none;
         flex: 1 0 calc(100% - 3rem);
     }
     .car-card-image {
         height: 150px;
+        text-decoration: none;
     }
     .car-card-info {
         padding-top: 1rem;
+        text-decoration: none;
     }
     .car-card-title {
         font-size: 1.2rem;
+        text-decoration: none;
     }
     .car-card-year {
         font-size: 1rem;
+        text-decoration: none;
     }
     .car-card-description {
-        font-size: 0.9rem; / Уменьшим размер описания на маленьких экранах */
+        font-size: 0.9rem;
+        text-decoration: none;
     }
 }
 }
