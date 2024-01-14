@@ -20,7 +20,15 @@ body {
     margin: 0;
 }
 
-
+.header-btn {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 16px;
+    margin: 0 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
 
 .main {
     margin-top: 20px;
