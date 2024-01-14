@@ -20,15 +20,20 @@ var tips = [
     'Если вы ездите с маленьким ребенком, не забывайте использовать автомобильное кресло, соответствующее его возрасту и весу.',
     'Перед дальней поездкой всегда проверяйте состояние световой сигнализации, включая фары, стоп-сигналы и поворотники.'
    ];
-   
+
    // Функция для выбора случайного совета из массива
    function getRandomTip() {
     var randomIndex = Math.floor(Math.random() * tips.length);
     return tips[randomIndex];
    }
-   
+
    // Добавление обработчика клика на кнопку
    var headerBtn = document.querySelector('.header-btn');
    headerBtn.addEventListener('click', function() {
     alert(getRandomTip());
    });
+var mainButton = document.getElementById('mainButton');
+
+mainButton.addEventListener('click', function() {
+    window.location.href = 'https://24carslist.ru/';
+});
