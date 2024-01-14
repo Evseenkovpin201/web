@@ -61,12 +61,14 @@ body {
 }
 
 .car-card {
+    text-decoration: none;
     border: 1px solid #ddd;
     margin: 10px;
     width: 350px;
 }
 
 .car-card-image img {
+    text-decoration: none;
     width: 350px; /* Замените на нужную вам ширину */
     height: 250px; /* Замените на нужную вам высоту */
     object-fit: cover; /* Заполнить область, сохраняя соотношение сторон и обрезая изображение при необходимости */
